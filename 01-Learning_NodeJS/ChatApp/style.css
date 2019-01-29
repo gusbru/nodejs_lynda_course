@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat');
+
+html {
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    max-width: 800px;
+    margin: auto;
+    padding: 1rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+section {
+    margin: 1rem;
+}
+
+.wrapper {
+    background-color: lightgrey;
+    border-radius: 5px;
+    padding: 2rem;
+}
+
+.messages-wrap {
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+.messages-list {
+    height: 400px;
+    border: 1px dotted red;
+}
+
+.send-message {
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+.control-send-message {
+    width: 100%;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.control-message {
+    box-sizing: border-box;
+    height: 30px;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+#input-message {
+    width: 78%;
+}
+
+#btn-send {
+    float: right;
+    width: 20%;
+    font-weight: 900;
+}
