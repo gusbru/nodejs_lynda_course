@@ -7,7 +7,7 @@ const app = express();
 app.use(express.static(__dirname));
 
 // start the server and listen for incoming requests
-const PORT = 3000;
+const PORT = 3001;
 const server = app.listen(PORT, () => {
     console.log('server is listening on port ', server.address().port);
 });
