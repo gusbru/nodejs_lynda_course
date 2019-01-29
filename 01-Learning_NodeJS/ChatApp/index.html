@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" defer></script>
     <title>Document</title>
 </head>
 
@@ -16,8 +17,8 @@
         </header>
         <section class="messages-wrap">
             <h2>Messages</h2>
-            <div class="messages-list">
-                messages
+            <div class="messages-list" id="messages-list">
+                
             </div>
 
         </section>
@@ -25,7 +26,7 @@
             <h2>Send Message</h2>
             <div class="control-send-message">
                 <input id="input-message" class="control-message" type="text">
-                <button id="btn-send" class="control-message">Send</button>
+                <button id="btn-send" class="control-message" onclick="sendMessage()">Send</button>
             </div>
         </section>
     </div>
