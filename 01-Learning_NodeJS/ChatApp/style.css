@@ -57,6 +57,15 @@ section {
     font-size: 20px;
 }
 
+.message {
+    border: 2px dotted red;
+}
+
+.list-empty {
+    text-align: center;
+    font-style: italic;
+}
+
 #input-message {
     width: 78%;
 }
