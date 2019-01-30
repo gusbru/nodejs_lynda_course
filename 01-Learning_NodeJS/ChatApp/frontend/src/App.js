@@ -5,10 +5,16 @@ class App extends Component {
 
   state = {
     message: '',
+    messageList: [],
   }
 
   sendMessage = () => {
-    console.log(`msg ${this.state.message} sent`);
+    this.state.message &&
+    this.setState({
+      message: '',
+      messageList: [...this.state.messageList, this.state.message],
+    });
+    console.log(this.state.messageList);
   }
 
   handleInput = (event) => {
@@ -26,7 +32,11 @@ class App extends Component {
         <section className="messages-wrap">
             <h2>Messages</h2>
             <div className="messages-list" id="messages-list">
-                
+                {this.state.messageList.map((message, id) => (
+                  <div key={id}>
+                    {message}
+                  </div>
+                ))}
             </div>
         </section>
         <section className="send-message clearfix">
